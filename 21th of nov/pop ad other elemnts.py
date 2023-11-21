@@ -1,0 +1,11 @@
+s=[1,2,9,4,7]
+s.insert(2,8)
+print(s)
+s.append(10)
+print(s)
+s.pop()
+print(s)
+s.remove(4)
+print(s)
+s.pop(2)
+print(s)
