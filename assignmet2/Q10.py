@@ -1,9 +1,17 @@
-import random
-import string
-n=int(input("enter the size"))
-def generate_random_string(length):
-    return ''.join(random.choice(string.ascii_letters ) for i in range(length+1))
+word=["hi","this","is","aya"]
+nn=int(input("Enter length: "))
+def kword(w,n):
+    result=[]
+    longe=[]
+    for s in range (len(w)):
+        if (n > len(w[s])):
+            result.append(w[s])
+        else:
+            longe.append(w[s])
+    print("The words from the list is not longer than the givn number: ",nn)
+    print(result)
+    print("The words from the list are longer than the givn number: ",nn)
+    print(longe)
 
- 
-random_string = generate_random_string(n)
-print(random_string)
+
+kword(word,nn)
