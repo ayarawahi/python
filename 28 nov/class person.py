@@ -5,7 +5,7 @@ class person:
         self.age=age
         person.num_of_ob+=1
     def __str__(self):
-        return"he how {} yor are{} year sols".format(self.name,self.age)
+        return("he how {} yor are{} year sols".format(self.name,self.age))
     def talk(self):
         return"{}  is talking ".format(self.name)
 per1=person("ahmed",24)

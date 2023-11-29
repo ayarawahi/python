@@ -28,11 +28,13 @@ class sqr(shape):
          area=self.l**2
          return area
      def __str__(self):
-      return("  this is  the sqr of {}and the color is {}".format(self.name,self.color))
+      return("  this is  the area of {}and the color is {}".format(self.name,self.color))
      
 
 p1=shape("a","pink")
 c1=cir("cir","black",4)
+
 print(p1)
 print(c1)
+
 
