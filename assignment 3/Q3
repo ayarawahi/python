@@ -1,0 +1,31 @@
+from random import *
+def roll_dice(dice):
+    r1=randint(1,6)
+    r2=randint(1,6)
+    dice=r1+r2
+    
+    
+    if (dice== 2 or dice== 3 or dice==12):
+        print("rolled {} + {} = {}".format(r1,r2,dice))
+        print("lose")
+    elif (dice== 7 or dice== 11):
+        print("rolled {} + {} = {}".format(r1,r2,dice))
+        print("Win")
+    else:
+        print("rolled {} + {} = {}".format(r1,r2,dice))
+        print("Point is: ",dice)
+        pt=dice
+        while (True):
+            d3=randint(1,6)
+            d4=randint(1,6)
+            dice=d3+d4
+            if(dice == 7):
+                print("You rolled {} + {} = {}".format(d3,d4,dice))
+                print("lose")
+                break
+            elif (dice == pt):
+                print("rolled {} + {} = {}".format(d3,d4,dice))
+                print("Win")
+                break
+roll=0
+roll_dice(roll)
